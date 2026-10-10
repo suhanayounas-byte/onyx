@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Gallery | Photographs from TravelVista Departures</title>
+  <meta name="description" content="A curated gallery of photographs from TravelVista departures across Norway, Dubai, the Maldives, Turkey, Bali, Japan, Switzerland, Greece and Egypt." />
+  <meta name="author" content="TravelVista Travel Agency" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Top bar ===== -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span>&#9742; +1 (415) 220-8890</span>
+        <span>&#9993; <a href="mailto:hello@travelvista.com">hello@travelvista.com</a></span>
+        <span>&#128205; 214 Harbour Street, Suite 1900, San Francisco</span>
+      </div>
+      <div class="topbar-social">
+        <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header / navigation ===== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">TV</span>
+          <span class="logo-text">Travel<span>Vista</span>
+            <span class="logo-tag">Journeys Beyond Ordinary</span>
+          </span>
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="booking.html" class="btn btn-primary btn-sm">Book a Trip</a>
+          <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Page banner ===== -->
+  <section class="page-banner">
+    <img class="banner-bg" src="images/banner.jpg" alt="Scenic travel landscape" />
+    <div class="container">
+      <h1>Travel Gallery</h1>
+      <p>Photographs from recent departures. Click any image to open it full screen, and use the arrow keys to browse.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Gallery</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">16 photographs</span>
+        <h2>Moments from our itineraries</h2>
+        <p>Filter by theme, then click a photo to view it in the lightbox.</p>
+      </div>
+
+      <div class="filter-bar reveal" data-filter-group data-filter-target=".gallery-item"
+        data-filter-empty="#no-photos">
+        <button class="filter-btn active" data-filter="all">All photos</button>
+        <button class="filter-btn" data-filter="landscape">Landscapes</button>
+        <button class="filter-btn" data-filter="beach">Beaches</button>
+        <button class="filter-btn" data-filter="city">Cities</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item g-wide reveal" data-category="landscape" data-title="Sunrise over the fjord" data-place="Geirangerfjord, Norway">
+          <img src="images/sunrise.jpg" alt="Sunrise over the fjord &mdash; Geirangerfjord, Norway" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Sunrise over the fjord</strong>
+            <span>Geirangerfjord, Norway</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="city" data-title="Skyline from the 148th floor" data-place="Downtown Dubai, UAE">
+          <img src="images/dubai.jpg" alt="Skyline from the 148th floor &mdash; Downtown Dubai, UAE" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Skyline from the 148th floor</strong>
+            <span>Downtown Dubai, UAE</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item g-tall reveal" data-category="beach" data-title="Overwater villa deck" data-place="Baa Atoll, Maldives">
+          <img src="images/maldives.png" alt="Overwater villa deck &mdash; Baa Atoll, Maldives" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Overwater villa deck</strong>
+            <span>Baa Atoll, Maldives</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="landscape" data-title="Balloons at first light" data-place="Cappadocia, Turkey">
+          <img src="images/turkey.jpg" alt="Balloons at first light &mdash; Cappadocia, Turkey" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Balloons at first light</strong>
+            <span>Cappadocia, Turkey</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="culture" data-title="Tegalalang rice terraces" data-place="Ubud, Bali">
+          <img src="images/bali.jpg" alt="Tegalalang rice terraces &mdash; Ubud, Bali" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Tegalalang rice terraces</strong>
+            <span>Ubud, Bali</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item g-tall reveal" data-category="culture" data-title="Torii gates at Fushimi Inari" data-place="Kyoto, Japan">
+          <img src="images/japan.jpg" alt="Torii gates at Fushimi Inari &mdash; Kyoto, Japan" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Torii gates at Fushimi Inari</strong>
+            <span>Kyoto, Japan</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item g-wide reveal" data-category="landscape" data-title="Glacier Express through the Alps" data-place="Andermatt, Switzerland">
+          <img src="images/switzerland.jpg" alt="Glacier Express through the Alps &mdash; Andermatt, Switzerland" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Glacier Express through the Alps</strong>
+            <span>Andermatt, Switzerland</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="beach" data-title="Caldera sunset in Oia" data-place="Santorini, Greece">
+          <img src="images/greece.jpg" alt="Caldera sunset in Oia &mdash; Santorini, Greece" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Caldera sunset in Oia</strong>
+            <span>Santorini, Greece</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="culture" data-title="Pyramids at Giza" data-place="Cairo, Egypt">
+          <img src="images/egypt.jpg" alt="Pyramids at Giza &mdash; Cairo, Egypt" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Pyramids at Giza</strong>
+            <span>Cairo, Egypt</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="beach" data-title="Longtail boats in Phang Nga Bay" data-place="Phuket, Thailand">
+          <img src="images/thailand.jpg" alt="Longtail boats in Phang Nga Bay &mdash; Phuket, Thailand" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Longtail boats in Phang Nga Bay</strong>
+            <span>Phuket, Thailand</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="landscape" data-title="Aurora above the Arctic plateau" data-place="Troms&oslash;, Norway">
+          <img src="images/norway.png" alt="Aurora above the Arctic plateau &mdash; Troms&oslash;, Norway" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Aurora above the Arctic plateau</strong>
+            <span>Troms&oslash;, Norway</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="culture" data-title="Evening at the Haram" data-place="Makkah, Saudi Arabia">
+          <img src="images/makkah.jpg" alt="Evening at the Haram &mdash; Makkah, Saudi Arabia" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Evening at the Haram</strong>
+            <span>Makkah, Saudi Arabia</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="city" data-title="Petronas Towers after dark" data-place="Kuala Lumpur, Malaysia">
+          <img src="images/malaysia.jpg" alt="Petronas Towers after dark &mdash; Kuala Lumpur, Malaysia" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Petronas Towers after dark</strong>
+            <span>Kuala Lumpur, Malaysia</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="food" data-title="Mezze table in Sultanahmet" data-place="Istanbul, Turkey">
+          <img src="images/food-1.jpg" alt="Mezze table in Sultanahmet &mdash; Istanbul, Turkey" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Mezze table in Sultanahmet</strong>
+            <span>Istanbul, Turkey</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item  reveal" data-category="food" data-title="Street food at Kad&#305;k&ouml;y market" data-place="Istanbul, Turkey">
+          <img src="images/food-2.jpg" alt="Street food at Kad&#305;k&ouml;y market &mdash; Istanbul, Turkey" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Street food at Kad&#305;k&ouml;y market</strong>
+            <span>Istanbul, Turkey</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item g-wide reveal" data-category="city" data-title="Marina at blue hour" data-place="Dubai Marina, UAE">
+          <img src="images/city-1.jpg" alt="Marina at blue hour &mdash; Dubai Marina, UAE" loading="lazy" />
+          <figcaption class="g-overlay">
+            <strong>Marina at blue hour</strong>
+            <span>Dubai Marina, UAE</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="empty-state" id="no-photos" style="display:none;">No photos in this category yet.</p>
+    </div>
+  </section>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" aria-label="Close viewer">&times;</button>
+    <button class="lightbox-nav lb-prev" aria-label="Previous photo">&#8249;</button>
+    <button class="lightbox-nav lb-next" aria-label="Next photo">&#8250;</button>
+   
+  </div>
+
+  <!-- ===== CTA band ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <span class="eyebrow" style="color:#fbbf24;">Ready when you are</span>
+      <h2>Let&rsquo;s plan the trip you keep postponing</h2>
+      <p>
+        Speak with a TravelVista designer today. We will build a personalised itinerary within 24 hours &mdash;
+        completely free, with no obligation to book.
+      </p>
+      <div class="cta-actions">
+        <a href="booking.html" class="btn btn-accent">Start Your Booking</a>
+        <a href="contact.html" class="btn btn-ghost-light">Talk to an Expert</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-mark">TV</span>
+            <span class="logo-text">Travel<span>Vista</span></span>
+          </a>
+          <p style="margin-top:18px;font-size:0.93rem;">
+            TravelVista has been designing handcrafted holidays since 2009. From honeymoon escapes in the
+            Maldives to cultural expeditions across Turkey and Japan, our 40 travel designers plan every
+            detail so you only have to enjoy the journey.
+          </p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="YouTube">Yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Traveller Reviews</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking.html">Book a Trip</a></li>
+            <li><a href="package-details.html">Sample Itinerary</a></li>
+            <li><a href="#">Travel Insurance Claims</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Weekly Travel Deals</h4>
+          <p style="font-size:0.93rem;">
+            Join 62,000 travellers receiving handpicked fare drops, seasonal offers and destination guides
+            every Friday morning.
+          </p>
+          <form class="newsletter" data-newsletter novalidate>
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit" class="btn btn-accent btn-sm">Join</button>
+          </form>
+          <p data-newsletter-msg style="font-size:0.85rem;margin-top:12px;"></p>
+          <p style="font-size:0.85rem;margin-top:14px;">
+            Office hours: Mon&ndash;Sat, 9:00 AM &ndash; 8:00 PM (PST)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> TravelVista Travel Agency. All rights reserved.</span>
+        <span>IATA Accredited &middot; Licensed Tour Operator #TV-4471 &middot; Privacy Policy &middot; Terms &amp; Conditions</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Scroll back to top">&#8593;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

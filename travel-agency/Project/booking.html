@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Trip | Secure a TravelVista Departure with a 20% Deposit</title>
+  <meta name="description" content="Book a TravelVista holiday online. Choose your package, dates, travellers and room type, see a live price estimate and confirm with a 20% deposit." />
+  <meta name="author" content="TravelVista Travel Agency" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Top bar ===== -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span>&#9742; +1 (415) 220-8890</span>
+        <span>&#9993; <a href="mailto:hello@travelvista.com">hello@travelvista.com</a></span>
+        <span>&#128205; 214 Harbour Street, Suite 1900, San Francisco</span>
+      </div>
+      <div class="topbar-social">
+        <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header / navigation ===== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">TV</span>
+          <span class="logo-text">Travel<span>Vista</span>
+            <span class="logo-tag">Journeys Beyond Ordinary</span>
+          </span>
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="booking.html" class="btn btn-primary btn-sm">Book a Trip</a>
+          <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <img class="banner-bg" src="images/banner.jpg" alt="Scenic travel landscape" />
+    <div class="container">
+      <h1>Book Your Trip</h1>
+      <p>Complete the form below and a travel designer confirms availability and your final quote within 24 hours. No payment is taken on this page.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Booking</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split" style="grid-template-columns:1.6fr 1fr;align-items:start;gap:44px;">
+
+        <div class="form-card reveal">
+          <div class="alert alert-success">
+            <h3>Booking request confirmed &mdash; thank you!</h3>
+            <p>
+              Your reference number is <strong data-ref>TV-2026-0000</strong>. A confirmation email is on its way
+              and a travel designer will call you within 24 hours to finalise availability and payment.
+            </p>
+            <p style="margin-top:10px;">
+              <strong>Traveller:</strong> <span data-sum-name>&mdash;</span><br />
+              <strong>Email:</strong> <span data-sum-email>&mdash;</span><br />
+              <strong>Package:</strong> <span data-sum-package>&mdash;</span><br />
+              <strong>Departure:</strong> <span data-sum-date>&mdash;</span><br />
+              <strong>Travellers:</strong> <span data-sum-travellers>&mdash;</span>
+            </p>
+          </div>
+          <div class="alert alert-error">
+            <h3>We could not submit your booking</h3>
+            <p>Please correct the highlighted fields below and try again.</p>
+          </div>
+
+          <h2 style="font-size:1.6rem;">Booking details</h2>
+          <p style="margin-bottom:20px;">All fields marked * are required. Nothing is charged until a designer
+            confirms your itinerary.</p>
+
+          <form data-validate data-booking novalidate>
+            <div class="form-grid">
+              <h3 class="fieldset-title">1. Lead traveller</h3>
+              <div class="field">
+                <label for="b-name">Full name (as in passport) *</label>
+                <input type="text" id="b-name" name="fullName" data-rule="name" data-label="Full name" required />
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-email">Email address *</label>
+                <input type="email" id="b-email" name="email" data-rule="email" data-label="Email address" required />
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-phone">Phone / WhatsApp *</label>
+                <input type="tel" id="b-phone" name="phone" data-rule="phone" data-label="Phone number" required />
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-country">Country of residence *</label>
+                <select id="b-country" name="country" data-label="Country" required>
+                  <option value="">Please choose</option>
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Canada</option>
+                  <option>United Arab Emirates</option>
+                  <option>Saudi Arabia</option>
+                  <option>Pakistan</option>
+                  <option>India</option>
+                  <option>Australia</option>
+                  <option>Other</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+
+              <h3 class="fieldset-title">2. Trip details</h3>
+              <div class="field full">
+                <label for="b-package">Choose your package *</label>
+                <select id="b-package" name="package" data-label="Package" required>
+                  <option value="" data-price="0">Please choose a package</option>
+                  <option value="dubai-luxury" data-price="1290">Dubai Luxury Escape &mdash; 5 Days / 4 Nights ($1,290 pp)</option>
+                  <option value="turkey-explorer" data-price="1140">Turkey Cultural Explorer &mdash; 8 Days / 7 Nights ($1,140 pp)</option>
+                  <option value="maldives-honeymoon" data-price="2150">Maldives Overwater Honeymoon &mdash; 6 Days / 5 Nights ($2,150 pp)</option>
+                  <option value="swiss-alps" data-price="1980">Swiss Alps Panorama &mdash; 7 Days / 6 Nights ($1,980 pp)</option>
+                  <option value="bali-retreat" data-price="980">Bali Island Retreat &mdash; 6 Days / 5 Nights ($980 pp)</option>
+                  <option value="japan-discovery" data-price="2340">Japan Discovery by Rail &mdash; 10 Days / 9 Nights ($2,340 pp)</option>
+                  <option value="thailand-value" data-price="890">Thailand Beach &amp; City &mdash; 7 Days / 6 Nights ($890 pp)</option>
+                  <option value="greece-islands" data-price="1720">Greek Islands Sailaway &mdash; 8 Days / 7 Nights ($1,720 pp)</option>
+                  <option value="egypt-nile" data-price="1180">Egypt &amp; Nile Cruise &mdash; 9 Days / 8 Nights ($1,180 pp)</option>
+                  <option value="umrah-comfort" data-price="1650">Umrah Comfort Package &mdash; 12 Days / 11 Nights ($1,650 pp)</option>
+                  <option value="norway-lights" data-price="2480">Norway Northern Lights &mdash; 6 Days / 5 Nights ($2,480 pp)</option>
+                  <option value="malaysia-family" data-price="860">Malaysia Family Holiday &mdash; 7 Days / 6 Nights ($860 pp)</option>
+                  <option value="custom" data-price="0">Fully customised trip &mdash; price on request</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-date">Departure date *</label>
+                <input type="date" id="b-date" name="departure" data-rule="future" data-label="Departure date" required />
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-flex">Date flexibility</label>
+                <select id="b-flex" name="flex">
+                  <option>Exact dates only</option>
+                  <option>&plusmn; 3 days</option>
+                  <option>&plusmn; 1 week</option>
+                  <option>Whole month is flexible</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-travellers">Number of travellers *</label>
+                <input type="number" id="b-travellers" name="travellers" min="1" max="20" value="2"
+                  data-rule="travellers" data-label="Number of travellers" required />
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-children">Children under 12</label>
+                <input type="number" id="b-children" name="children" min="0" max="10" value="0" />
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-room">Room type *</label>
+                <select id="b-room" name="roomType" data-label="Room type" required>
+                  <option value="twin">Twin / double sharing (standard)</option>
+                  <option value="single">Single occupancy (+25%)</option>
+                  <option value="suite">Suite or upgraded villa (+60%)</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-cabin">Preferred flight cabin</label>
+                <select id="b-cabin" name="cabin">
+                  <option>Economy</option>
+                  <option>Premium economy</option>
+                  <option>Business</option>
+                  <option>I will arrange my own flights</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+
+              <h3 class="fieldset-title">3. Preferences &amp; extras</h3>
+              <div class="field">
+                <label for="b-insurance">Add travel insurance</label>
+                <select id="b-insurance" name="insurance">
+                  <option>Yes &mdash; quote me (from $19 per traveller)</option>
+                  <option>No &mdash; I have my own policy</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="field">
+                <label for="b-diet">Dietary requirement</label>
+                <select id="b-diet" name="diet">
+                  <option>None</option>
+                  <option>Halal</option>
+                  <option>Vegetarian</option>
+                  <option>Vegan</option>
+                  <option>Gluten free</option>
+                  <option>Nut allergy</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="field full">
+                <label for="b-notes">Special requests</label>
+                <textarea id="b-notes" name="notes" placeholder="Anniversary or honeymoon, connecting rooms, wheelchair access, preferred hotels, extra nights &mdash; anything that will shape the itinerary."></textarea>
+                <span class="error-msg"></span>
+              </div>
+              <div class="field full">
+                <label class="checkbox-row">
+                  <input type="checkbox" name="terms" required />
+                  <span>I have read and accept the booking terms, payment schedule and cancellation policy. *</span>
+                </label>
+                <span class="error-msg"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top:24px;">
+              Confirm Booking Request
+            </button>
+            <p style="font-size:0.84rem;text-align:center;margin-top:14px;">
+              No card details are collected here. A designer confirms availability before any payment is taken.
+            </p>
+          </form>
+        </div>
+
+        <aside class="sticky-box reveal">
+          <div class="price-box">
+            <span class="eyebrow">Live estimate</span>
+            <h3 style="font-size:1.2rem;margin-bottom:10px;">Your estimated total</h3>
+            <div class="big" data-estimate>Select a package</div>
+            <p style="font-size:0.9rem;" data-estimate-person>&mdash;</p>
+            <div style="margin:20px 0;">
+              <div class="price-row"><span>Deposit due today</span><strong>20%</strong></div>
+              <div class="price-row"><span>Balance due</span><strong>30 days before</strong></div>
+              <div class="price-row"><span>Free cancellation</span><strong>Up to 45 days</strong></div>
+              <div class="price-row"><span>Card fees</span><strong>None</strong></div>
+            </div>
+            <p style="font-size:0.85rem;">
+              The estimate updates as you change package, traveller count and room type. Final pricing is
+              confirmed in writing by your travel designer.
+            </p>
+          </div>
+
+          <div class="price-box" style="margin-top:22px;">
+            <h3 style="font-size:1.15rem;">Prefer to talk it through?</h3>
+            <p style="font-size:0.93rem;">
+              Call our booking desk Monday to Saturday, or ask for a 15-minute planning call at a time that
+              suits you.
+            </p>
+            <p style="font-size:0.95rem;"><strong style="color:var(--ink);">+1 (415) 220-8890</strong><br />
+              <a href="mailto:hello@travelvista.com" style="color:var(--blue-600);">hello@travelvista.com</a></p>
+            <a href="contact.html" class="btn btn-outline btn-block btn-sm" style="margin-top:12px;">Contact Page</a>
+          </div>
+
+          <div class="price-box" style="margin-top:22px;">
+            <h3 style="font-size:1.15rem;">Why book with us</h3>
+            <ul class="includes">
+              <li>IATA accredited, licence #TV-4471</li>
+              <li>Funds protected in a client trust account</li>
+              <li>24/7 support while you travel</li>
+              <li>A named designer for every booking</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA band ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <span class="eyebrow" style="color:#fbbf24;">Ready when you are</span>
+      <h2>Let&rsquo;s plan the trip you keep postponing</h2>
+      <p>
+        Speak with a TravelVista designer today. We will build a personalised itinerary within 24 hours &mdash;
+        completely free, with no obligation to book.
+      </p>
+      <div class="cta-actions">
+        <a href="booking.html" class="btn btn-accent">Start Your Booking</a>
+        <a href="contact.html" class="btn btn-ghost-light">Talk to an Expert</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-mark">TV</span>
+            <span class="logo-text">Travel<span>Vista</span></span>
+          </a>
+          <p style="margin-top:18px;font-size:0.93rem;">
+            TravelVista has been designing handcrafted holidays since 2009. From honeymoon escapes in the
+            Maldives to cultural expeditions across Turkey and Japan, our 40 travel designers plan every
+            detail so you only have to enjoy the journey.
+          </p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="YouTube">Yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Traveller Reviews</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking.html">Book a Trip</a></li>
+            <li><a href="package-details.html">Sample Itinerary</a></li>
+            <li><a href="#">Travel Insurance Claims</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Weekly Travel Deals</h4>
+          <p style="font-size:0.93rem;">
+            Join 62,000 travellers receiving handpicked fare drops, seasonal offers and destination guides
+            every Friday morning.
+          </p>
+          <form class="newsletter" data-newsletter novalidate>
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit" class="btn btn-accent btn-sm">Join</button>
+          </form>
+          <p data-newsletter-msg style="font-size:0.85rem;margin-top:12px;"></p>
+          <p style="font-size:0.85rem;margin-top:14px;">
+            Office hours: Mon&ndash;Sat, 9:00 AM &ndash; 8:00 PM (PST)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> TravelVista Travel Agency. All rights reserved.</span>
+        <span>IATA Accredited &middot; Licensed Tour Operator #TV-4471 &middot; Privacy Policy &middot; Terms &amp; Conditions</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Scroll back to top">&#8593;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

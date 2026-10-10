@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations | 24 Countries Curated by TravelVista</title>
+  <meta name="description" content="Explore TravelVista destinations including Dubai, Turkey, Maldives, Switzerland, Bali, Japan, Greece, Egypt and Norway with prices, highlights and available tours." />
+  <meta name="author" content="TravelVista Travel Agency" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Top bar ===== -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span>&#9742; +1 (415) 220-8890</span>
+        <span>&#9993; <a href="mailto:hello@travelvista.com">hello@travelvista.com</a></span>
+        <span>&#128205; 214 Harbour Street, Suite 1900, San Francisco</span>
+      </div>
+      <div class="topbar-social">
+        <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header / navigation ===== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">TV</span>
+          <span class="logo-text">Travel<span>Vista</span>
+            <span class="logo-tag">Journeys Beyond Ordinary</span>
+          </span>
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html" class="active">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="booking.html" class="btn btn-primary btn-sm">Book a Trip</a>
+          <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Page banner ===== -->
+  <section class="page-banner">
+    <img class="banner-bg" src="images/banner.jpg" alt="Scenic travel landscape" />
+    <div class="container">
+      <h1>Our Destinations</h1>
+      <p>Twelve featured regions from our 24-country portfolio &mdash; each with resident guides, contracted hotels and itineraries we have walked ourselves.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Destinations</div>
+    </div>
+  </section>
+
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Search the collection</span>
+        <h2>Find the destination that fits your trip</h2>
+        <p>Filter by name, region or experience. Prices shown are per person on twin-sharing basis.</p>
+      </div>
+
+      <form class="search-card reveal" data-search-form novalidate style="margin-bottom:26px;">
+        <div class="field">
+          <label for="q">Destination or region</label>
+          <input type="text" id="q" data-search-input placeholder="Try Maldives, Europe or honeymoon" />
+        </div>
+        <div class="field">
+          <label for="type">Experience</label>
+          <select id="type" data-search-type>
+            <option value="">Any experience</option>
+            <option value="beach">Beach &amp; islands</option>
+            <option value="honeymoon">Honeymoon</option>
+            <option value="family">Family friendly</option>
+            <option value="culture">Culture &amp; history</option>
+            <option value="mountains">Mountains &amp; scenic</option>
+            <option value="city">City breaks</option>
+            <option value="pilgrimage">Umrah &amp; pilgrimage</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="budget">Budget per person</label>
+          <select id="budget" data-search-budget>
+            <option value="">No limit</option>
+            <option value="1000">Under $1,000</option>
+            <option value="1500">Under $1,500</option>
+            <option value="2000">Under $2,000</option>
+            <option value="2500">Under $2,500</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="nights">Trip length</label>
+          <select id="nights">
+            <option>Any length</option>
+            <option>4&ndash;6 nights</option>
+            <option>7&ndash;9 nights</option>
+            <option>10+ nights</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <p data-search-msg style="margin-bottom:34px;"></p>
+
+      <div class="grid grid-3">
+          <article class="card reveal" data-destination="Dubai" data-region="Middle East"
+            data-tags="luxury city desert family" data-price="1290">
+            <div class="card-media">
+              <img src="images/dubai.jpg" alt="Dubai travel photograph" loading="lazy" />
+              <span class="tag">Middle East</span>
+              <span class="tag tag-accent">14 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Dubai</h3>
+              <div class="meta"><span>&#128205; United Arab Emirates</span></div>
+              <p>Desert safaris at golden hour, the 148th-floor observation deck of Burj Khalifa, gold souks in Deira and a dhow dinner cruise along the Marina.</p>
+              <div class="card-foot">
+                <span class="price">$1,290<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Turkey" data-region="Europe / Asia"
+            data-tags="culture history balloon family" data-price="1140">
+            <div class="card-media">
+              <img src="images/turkey.jpg" alt="Turkey travel photograph" loading="lazy" />
+              <span class="tag">Europe / Asia</span>
+              <span class="tag tag-accent">11 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Turkey</h3>
+              <div class="meta"><span>&#128205; Istanbul &amp; Cappadocia</span></div>
+              <p>Sunrise hot-air balloons over Cappadocia&rsquo;s fairy chimneys, Hagia Sophia, the Blue Mosque and a Bosphorus ferry between two continents.</p>
+              <div class="card-foot">
+                <span class="price">$1,140<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Maldives" data-region="Indian Ocean"
+            data-tags="beach honeymoon luxury" data-price="2150">
+            <div class="card-media">
+              <img src="images/maldives.png" alt="Maldives travel photograph" loading="lazy" />
+              <span class="tag">Indian Ocean</span>
+              <span class="tag tag-accent">9 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Maldives</h3>
+              <div class="meta"><span>&#128205; South Asia</span></div>
+              <p>Overwater villas on Baa Atoll, house-reef snorkelling with manta rays, sandbank picnics and candlelit dinners on the shoreline.</p>
+              <div class="card-foot">
+                <span class="price">$2,150<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Switzerland" data-region="Europe"
+            data-tags="mountains luxury family scenic" data-price="1980">
+            <div class="card-media">
+              <img src="images/switzerland.jpg" alt="Switzerland travel photograph" loading="lazy" />
+              <span class="tag">Europe</span>
+              <span class="tag tag-accent">8 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Switzerland</h3>
+              <div class="meta"><span>&#128205; Alps &amp; Lakes</span></div>
+              <p>The Glacier Express through Andermatt, Jungfraujoch at 3,454 m, Lake Lucerne cruises and chocolate workshops in Zurich.</p>
+              <div class="card-foot">
+                <span class="price">$1,980<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Bali" data-region="Southeast Asia"
+            data-tags="beach honeymoon culture budget" data-price="980">
+            <div class="card-media">
+              <img src="images/bali.jpg" alt="Bali travel photograph" loading="lazy" />
+              <span class="tag">Southeast Asia</span>
+              <span class="tag tag-accent">13 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Bali</h3>
+              <div class="meta"><span>&#128205; Indonesia</span></div>
+              <p>Ubud&rsquo;s rice terraces and monkey forest, Tanah Lot at sunset, Nusa Penida day sailing and Balinese cooking classes in Sanur.</p>
+              <div class="card-foot">
+                <span class="price">$980<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Japan" data-region="East Asia"
+            data-tags="culture city food history" data-price="2340">
+            <div class="card-media">
+              <img src="images/japan.jpg" alt="Japan travel photograph" loading="lazy" />
+              <span class="tag">East Asia</span>
+              <span class="tag tag-accent">7 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Japan</h3>
+              <div class="meta"><span>&#128205; Tokyo, Kyoto &amp; Osaka</span></div>
+              <p>Cherry blossoms at Philosopher&rsquo;s Path, bullet trains to Kyoto, Fushimi Inari&rsquo;s torii gates and Tsukiji&rsquo;s morning market.</p>
+              <div class="card-foot">
+                <span class="price">$2,340<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Thailand" data-region="Southeast Asia"
+            data-tags="beach budget city food" data-price="890">
+            <div class="card-media">
+              <img src="images/thailand.jpg" alt="Thailand travel photograph" loading="lazy" />
+              <span class="tag">Southeast Asia</span>
+              <span class="tag tag-accent">12 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Thailand</h3>
+              <div class="meta"><span>&#128205; Bangkok &amp; Phuket</span></div>
+              <p>Grand Palace temples, longtail boats through Phang Nga Bay, Chiang Mai night bazaars and Thai massage in Old Bangkok.</p>
+              <div class="card-foot">
+                <span class="price">$890<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Greece" data-region="Europe"
+            data-tags="beach honeymoon history luxury" data-price="1720">
+            <div class="card-media">
+              <img src="images/greece.jpg" alt="Greece travel photograph" loading="lazy" />
+              <span class="tag">Europe</span>
+              <span class="tag tag-accent">10 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Greece</h3>
+              <div class="meta"><span>&#128205; Athens &amp; Santorini</span></div>
+              <p>The Acropolis at opening hour, caldera sunsets in Oia, catamaran sailing to Red Beach and island hopping to Mykonos.</p>
+              <div class="card-foot">
+                <span class="price">$1,720<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Egypt" data-region="North Africa"
+            data-tags="history culture budget" data-price="1180">
+            <div class="card-media">
+              <img src="images/egypt.jpg" alt="Egypt travel photograph" loading="lazy" />
+              <span class="tag">North Africa</span>
+              <span class="tag tag-accent">6 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Egypt</h3>
+              <div class="meta"><span>&#128205; Cairo &amp; Luxor</span></div>
+              <p>Giza pyramids and the Sphinx, the Grand Egyptian Museum, a four-night Nile cruise and the Valley of the Kings.</p>
+              <div class="card-foot">
+                <span class="price">$1,180<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Malaysia" data-region="Southeast Asia"
+            data-tags="city family budget beach" data-price="860">
+            <div class="card-media">
+              <img src="images/malaysia.jpg" alt="Malaysia travel photograph" loading="lazy" />
+              <span class="tag">Southeast Asia</span>
+              <span class="tag tag-accent">9 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Malaysia</h3>
+              <div class="meta"><span>&#128205; Kuala Lumpur &amp; Langkawi</span></div>
+              <p>Petronas Twin Towers skybridge, Batu Caves, Langkawi&rsquo;s SkyCab cable car and island-hopping to Pulau Payar.</p>
+              <div class="card-foot">
+                <span class="price">$860<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Norway" data-region="Scandinavia"
+            data-tags="scenic mountains luxury adventure" data-price="2480">
+            <div class="card-media">
+              <img src="images/norway.png" alt="Norway travel photograph" loading="lazy" />
+              <span class="tag">Scandinavia</span>
+              <span class="tag tag-accent">5 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Norway</h3>
+              <div class="meta"><span>&#128205; Fjords &amp; Troms&oslash;</span></div>
+              <p>Northern lights above Troms&oslash;, the Flam Railway, Geirangerfjord cruises and husky sledding across the Arctic plateau.</p>
+              <div class="card-foot">
+                <span class="price">$2,480<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" data-destination="Saudi Arabia" data-region="Middle East"
+            data-tags="pilgrimage family culture" data-price="1650">
+            <div class="card-media">
+              <img src="images/makkah.jpg" alt="Saudi Arabia travel photograph" loading="lazy" />
+              <span class="tag">Middle East</span>
+              <span class="tag tag-accent">15 tours</span>
+            </div>
+            <div class="card-body">
+              <h3>Saudi Arabia</h3>
+              <div class="meta"><span>&#128205; Makkah &amp; Madinah</span></div>
+              <p>Guided Umrah packages with hotels a short walk from the Haram, Ziyarat tours in Madinah and full visa and transport handling.</p>
+              <div class="card-foot">
+                <span class="price">$1,650<small> / person</small></span>
+                <a href="packages.html" class="btn btn-outline btn-sm">Explore</a>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA band ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <span class="eyebrow" style="color:#fbbf24;">Ready when you are</span>
+      <h2>Let&rsquo;s plan the trip you keep postponing</h2>
+      <p>
+        Speak with a TravelVista designer today. We will build a personalised itinerary within 24 hours &mdash;
+        completely free, with no obligation to book.
+      </p>
+      <div class="cta-actions">
+        <a href="booking.html" class="btn btn-accent">Start Your Booking</a>
+        <a href="contact.html" class="btn btn-ghost-light">Talk to an Expert</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-mark">TV</span>
+            <span class="logo-text">Travel<span>Vista</span></span>
+          </a>
+          <p style="margin-top:18px;font-size:0.93rem;">
+            TravelVista has been designing handcrafted holidays since 2009. From honeymoon escapes in the
+            Maldives to cultural expeditions across Turkey and Japan, our 40 travel designers plan every
+            detail so you only have to enjoy the journey.
+          </p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="YouTube">Yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Traveller Reviews</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking.html">Book a Trip</a></li>
+            <li><a href="package-details.html">Sample Itinerary</a></li>
+            <li><a href="#">Travel Insurance Claims</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Weekly Travel Deals</h4>
+          <p style="font-size:0.93rem;">
+            Join 62,000 travellers receiving handpicked fare drops, seasonal offers and destination guides
+            every Friday morning.
+          </p>
+          <form class="newsletter" data-newsletter novalidate>
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit" class="btn btn-accent btn-sm">Join</button>
+          </form>
+          <p data-newsletter-msg style="font-size:0.85rem;margin-top:12px;"></p>
+          <p style="font-size:0.85rem;margin-top:14px;">
+            Office hours: Mon&ndash;Sat, 9:00 AM &ndash; 8:00 PM (PST)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> TravelVista Travel Agency. All rights reserved.</span>
+        <span>IATA Accredited &middot; Licensed Tour Operator #TV-4471 &middot; Privacy Policy &middot; Terms &amp; Conditions</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Scroll back to top">&#8593;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
